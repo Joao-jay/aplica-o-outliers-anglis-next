@@ -1,0 +1,19 @@
+# Pasta de mídia local (vídeos hospedados no Drive/externo)
+media/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configurações de editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Ambiente e dependências (caso use no futuro)
+node_modules/
+.env
