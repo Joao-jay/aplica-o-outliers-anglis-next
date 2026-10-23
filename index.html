@@ -294,6 +294,9 @@ video {
       player.appendChild(current);
     }
 
+    const reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    player.scrollIntoView({ behavior: reduz ? 'auto' : 'smooth', block: 'center' });
+
     current.play().catch(() => {
       player.innerHTML =
         '<div class="placeholder"><div><strong>Não foi possível reproduzir</strong><span>Verifique o link do vídeo no código.</span></div></div>';
